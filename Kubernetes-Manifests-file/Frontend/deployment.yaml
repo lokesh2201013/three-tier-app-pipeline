@@ -25,10 +25,10 @@ spec:
       - name: ecr-registry-secret
       containers:
       - name: frontend
-        image: us-east1-docker.pkg.dev/advance-replica-428411-v0/frontend/frontend
+        image: us-east1-docker.pkg.dev/advance-replica-428411-v0/frontend/frontend:35
         imagePullPolicy: Always
         env:
           - name: REACT_APP_BACKEND_URL
-            value: "http://amanpathakdevops.study/api/tasks"
+            value: "http://34.95.98.153/api/tasks"
         ports:
         - containerPort: 3000
